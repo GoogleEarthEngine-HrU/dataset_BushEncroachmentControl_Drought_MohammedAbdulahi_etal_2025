@@ -1,0 +1,18 @@
+Variable,Description,Units,Source,Processing,
+SSMI,Standardized Soil Moisture Index (-3 to +3),Index,FLDAS (NASA GES DISC),Standardized against 1982–2014 climatology,
+SRI,Standardized Runoff Index (-3 to +3),Index,ERA5-Land (ECMWF),Standardized against 1982–2014 climatology,
+Precip,Monthly precipitation,mm/month,CHIRPS (Climate Hazards Center),Aggregated to 0.1° resolution,
+Temp,Monthly temperature,°C,CHIRTS (Climate Hazards Center),Aggregated to 0.1° resolution,
+Runoff,Monthly surface runoff,mm/month,ERA5-Land (ECMWF),Bias-corrected, standardized
+SoilMoist,Monthly soil moisture,mm,FLDAS (NASA GES DISC),Bias-corrected, standardized
+Shrubland_pct,Percent shrubland cover per grid cell,%,Dynamic World V1.6.1,Modal class (2015–2024),
+Grassland_pct,Percent grassland cover per grid cell,%,Dynamic World V1.6.1,Modal class (2015–2024),
+Forest_pct,Percent forest cover per grid cell,%,Dynamic World V1.6.1,Modal class (2015–2024),
+S1_Encroachment,Scenario: 100% grassland+forest → shrubland,%,Rule-based reclassification, complete encroachment,
+S2_BEC50,Scenario: 50% shrubland restored to grassland/forest,%,Rule-based reclassification, moderate restoration,
+S3_BEC75,Scenario: 75% shrubland restored to grassland/forest,%,Rule-based reclassification, strong restoration,
+Drought_Duration,Length of drought event,months,Derived from SSMI/SRI,Run theory method,
+Drought_Severity,Cumulative deficit over event,Index sum,Derived from SSMI/SRI,Run theory method,
+Drought_Intensity,Average deficit per month (S/D),Index,Derived from SSMI/SRI,Run theory method,
+IR%,Relative Index Ratio,% of baseline,Holden et al. 2022; Paez et al. 2023,Calculated baseline vs scenario,
+%?S,Percentage change vs baseline,% change,Holden et al. 2022; Paez et al. 2023,Calculated baseline vs scenario,
